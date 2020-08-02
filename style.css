@@ -1,0 +1,23 @@
+/*Name: Jullan Quevedo ID: 17981982
+This style.css file controls the view of the HTML pages*/
+html
+{
+    background-color: #3D8E7B;
+    margin: 15px;
+    text-align: left;
+}
+head
+{
+    background-color: #9ED3C6;   
+}
+body
+{
+    background-color: #BBD0CB;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+h1
+{
+    font-family:serif;
+    font-size:60px;
+}

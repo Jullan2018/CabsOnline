@@ -1,0 +1,27 @@
+<!--Name: Jullan Quevedo ID: 17981982 !-->
+<!--admin.html is a HTML page that allows admin users to view booking request !-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="http://pkd2015.cmslamp14.aut.ac.nz/assign2/style.css?ts=<?=time()?">
+    <script type="text/javascript" src="main.js"></script>
+    <title>Welcome To CabsOnline</title>
+    <h1>CabsOnline</h1>
+</head>
+<body>
+<form id="searchBooking">
+<button type="button" onclick="showBooking()">Show unassigned booking</button><br><br>
+</form> 
+
+<form id="assignReference">
+<label for="requestSearch">Assign Booking. Please Enter Booking Reference:</label>
+<input type="text" id="search" required name="search"><br>
+<button type="button" onclick="assignBooking()">Assign a Booking</button>
+</form>
+</body>
+
+<br><br><a href="booking.html">Make A Booking</a>
+</html>
+
+    

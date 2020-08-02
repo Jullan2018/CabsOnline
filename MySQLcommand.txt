@@ -1,0 +1,30 @@
+SQL COMMANDS USED in this assignment
+Web Development - Assignment 2
+Name: Jullan Quevedo ID: 17981982
+This text file display all the query used in the project.
+
+- SQL query
+1. create a customer Table
+CREATE TABLE IF NOT EXISTS CabsOnline(
+        generatedCode VARCHAR(10) PRIMARY KEY,
+        fullName VARCHAR(50) NOT NULL,
+        phoneNo VARCHAR(10) NOT NULL,
+        pickUpAddress VARCHAR(100) NOT NULL,
+        bookingDate DATE NOT NULL,
+        bookingTime TIME NOT NULL
+        Status VARCHAR(100) NOT NULL
+        pickUpDateTime DATETIME NOT NULL)";
+        
+2. insert data into database
+"INSERT INTO CabsOnline(generatedCode,fullName,phoneNo,pickUpAddress,bookingDate,bookingTime,Status,pickUpDateTime)
+        VALUES('$generateCode','$name','$contactno','$pickup','$bookingDate','$bookingTime','$status','$datetime')";
+        
+3. create a database
+"CREATE DATABASE IF NOT EXISTS CabsOnline";
+
+4. return the data where status is assigned and the time is within 2 hours from current time.
+"SELECT * FROM CabsOnline WHERE Status = 'unassigned' AND
+pickUpDateTime >= DATE_SUB(NOW(), INTERVAL 2 HOUR)";
+
+5. update the status from unassigned to assigned
+"UPDATE CabsOnline SET Status = 'assigned' WHERE generatedCode = '$userInput'"
